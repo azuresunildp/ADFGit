@@ -1,0 +1,9 @@
+{
+	"name": "suniladf11",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "75a7743c-3b04-4c8e-8fc5-d18ecc470e5c",
+		"tenantId": "5fbbb1aa-7c08-4487-8c31-80b03ed67c09"
+	}
+}

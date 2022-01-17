@@ -1,0 +1,30 @@
+{
+	"name": "Excel1Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adf_linked",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Filename",
+					"type": "Expression"
+				},
+				"fileSystem": "input-data"
+			},
+			"sheetIndex": 0,
+			"firstRowAsHeader": false
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
