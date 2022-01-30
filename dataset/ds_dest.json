@@ -1,36 +1,19 @@
 {
-	"name": "DelimitedText1",
+	"name": "ds_dest",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_source",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": "Logging_data",
 				"fileSystem": "livetccc"
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"quoteChar": "\""
-		},
-		"schema": [
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
 			}
-		]
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

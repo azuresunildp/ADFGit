@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "Ds_source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_source",
@@ -10,27 +10,16 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Logging_data",
+				"fileName": "sample-xls-file-for-testing.xls.csv",
+				"folderPath": "input",
 				"fileSystem": "livetccc"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
-			},
-			{
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

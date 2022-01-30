@@ -1,0 +1,9 @@
+{
+	"name": "livedemo",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e4c0c642-38b8-4cb9-baeb-200543cb7b2a",
+		"tenantId": "5fbbb1aa-7c08-4487-8c31-80b03ed67c09"
+	}
+}
